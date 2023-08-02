@@ -1,0 +1,55 @@
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Add styles for larger screens */
+@media (min-width: 768px) {
+  .MuiTableContainer-root {
+    max-width: 100%;
+  }
+}
+
+/* Add styles for smaller screens */
+@media (max-width: 600px) {
+  .MuiTableCell-root {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 8px 4px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
