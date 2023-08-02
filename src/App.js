@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Booking from './Components/Booking';
-import BookingDataPage from './Components/BookingData';
+import Navbar from './Components/Navbar';
+
+import AllRoutes from './routes/AllRoutes';
 
 function App() {
   return (
     <div className="App">
-      <Booking/>
+    <Navbar/>
+      <AllRoutes/>
      
     </div>
   );
